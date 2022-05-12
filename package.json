@@ -4,8 +4,8 @@
   "description": "Klein Notion - a trimmed down stackless clone of notion (front-end)",
   "main": "./src/index.ts",
   "scripts": {
-    "build": "webpack --mode=production",
-    "start": "webpack serve --mode=development",
+    "build": "cp ./static/* ./build && webpack --mode=production",
+    "start": "cp ./static/* ./build && webpack serve --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nima Azarbayjani",
